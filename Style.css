@@ -1,0 +1,242 @@
+body
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+nav
+{
+    padding: 15px;
+    box-shadow: 3px 4px 11px 0px rgba(0,0,0,0.72);
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 99;
+}
+nav > label
+{
+    font-size: 35px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
+    margin-left: 7%;
+    margin-right: 7%;
+}
+nav > a
+{
+    vertical-align: top;
+    text-decoration: none;
+    padding: 8px 18px;
+    display: inline-block;
+    width: fit-content;
+    margin-top: 5px;
+    margin-left: 8px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+}
+nav > a:hover
+{
+    color: rgba(0, 0, 0, 0.6);
+}
+#contact
+{
+    margin-left: 6%;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgba(165, 42, 42, .7);
+    color: white;
+}
+#contact:hover
+{
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* Cover Section */
+#cover-sec
+{
+    width: 100%;
+    height: 620px;
+    position: relative;
+}
+#cover-sec > img.cover-pic
+{
+    width: 100%;
+    height: 620px;
+}
+#cover-sec > .cover-title
+{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.9);
+    top: 15%;
+    left: 5%;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1.7;
+}
+#cover-sec > .cover-link
+{
+    position: absolute;
+    bottom: 18%;
+    left: 5%;
+}
+#cover-sec > .cover-link > a
+{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 8px 30px;
+    margin-right: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+}
+#cover-sec > .cover-link > a:hover
+{
+    background-color: black;
+}
+#cover-sec > img.border-pic
+{
+    position: absolute;
+    bottom: -4px;
+    width: 100%;
+    height: 20px;
+}
+
+/* About Us */
+#about-us > h2
+{
+    color: green;
+    font-size: 32px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    word-spacing: 8px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+#about-us > h2::before
+{
+    content: "";
+    display: block;
+    background-color: green;
+    width: 3px;
+    height: 120px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+#about-us > h1
+{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    word-spacing: 8px;
+    text-align: center;
+    margin-top: 0;
+}
+
+/* book-table */
+#book-table
+{
+    width: 100%;
+    height: 580px;
+    background-image: url('Image/coffee_cover3.jpg');
+    background-size: 100% 580px;
+    position: relative;
+    display: flex;
+}
+#book-table::before
+{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -2px;
+    width: 100%;
+    height: 20px;
+    background-image: url('Image/overlay-top-removebg-preview1.png');
+    background-repeat: repeat-x;
+    background-size: 40% 100%;
+    z-index: 99;
+}
+#book-table::after
+{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 20px;
+    background-image: url('Image/overlay-bottom-removebg-preview.png');
+    background-repeat: repeat-x;
+    background-size: 40% 100%;
+}
+#book-table > div.booktable1
+{
+    width: 43.4%;
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    padding: 30px 50px;
+}
+#book-table > div.booktable1 > h1
+{
+    color: rgba(210, 105, 30, .95);
+    margin-top: 80px;
+    font-size: 36pt;
+    margin-bottom: 5px;
+}
+#book-table > div.booktable1 > h2
+{
+    padding-top: 0px;
+    margin-top: 0px;
+    font-size: 28pt;
+}
+#book-table > div.booktable1 > p
+{
+    font-size: 14pt;
+}
+#book-table > div.booktable1 > li
+{
+    list-style: none;
+    font-size: 14pt;
+}
+#book-table > div.booktable1 > li > label
+{
+    font-size: 14pt;
+    margin-right: 20px;
+}
+#book-table > div.booktable2
+{
+    width: 43.4%;
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+    padding: 30px 50px;
+}
+#book-table > div.booktable2 > h2
+{
+    text-align: center;
+    font-size: 36pt;
+    margin-bottom: 10px;
+}
+#book-table > div.booktable2 > div > input,button
+{
+    margin-top: 0px;
+    display: block;
+    width: 100%;
+    height: 45px;
+    background-color: transparent;
+    border-color: rgba(210, 105, 30, .95);
+    color: grey;
+    font-size: 13pt;
+    padding: 0px 10px;
+    outline-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+#book-table > div.booktable2 > div > button
+{
+    background-color: rgba(210, 105, 30, 1);
+    color: black;
+    cursor: pointer;
+}
+#book-table > div.booktable2 > div > button:hover
+{
+    background-color: rgba(210, 105, 30, 0.8);
+}
